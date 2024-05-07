@@ -98,13 +98,26 @@ section {
     font-size: 16px;
 
 }
+.about-section:nth-of-type(2n) > img {
+float: left;
+margin: 0 24px 24px 0;
+    
+}
+.about-section:nth-of-type(2n + 1) > img {
+float: right;
+margin: 0 24px 24px 24px;
+
+}
+
 .about-section img {
     height: 128px;
 }
+
 #about-header {
     font-weight: 300;
     font-size: 2rem;
 }
+
 .project {
     width: calc(100% - 6em);
     background: #fafafa;
@@ -113,6 +126,7 @@ section {
     margin: 2em auto;
     padding: 1em;
 }
+
 .project:nth-of-type(2n) img {
     width: 240px;
     margin-left: 1em;
@@ -120,6 +134,8 @@ section {
     float: left;
     box-shadow: 0 3px 6px -2px #ccc;
 }
+
+
 .project:nth-of-type(2n + 1) img {
     width: 240px;
     margin-left: 1em;
@@ -127,6 +143,8 @@ section {
     float: right;
     box-shadow: 0 3px 6px -2px #ccc;
 }
+
+
 .project h2 {
     font-weight: 500;
     font-size: 2em;
@@ -138,4 +156,46 @@ section {
     font-weight: 100;
     font-size: 2rem;
     border-bottom: 1px solid #ccc;
+}
+@media screen and (max-width: 625px) {
+    .project {
+        width: 100%;
+    }
+
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-content img {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;   
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+main .qoute {
+    margin-top: 0%;
+}
+
+.about-section:nth-of-type(n) > img.about.img {
+    float: unset;
+    margin: unset;
+    width: 100%;
+    height: unset;
+}
+
+footer a {
+    margin: 0;
+}
+#form {
+    margin: 0;
+}
+
 }
