@@ -40,6 +40,11 @@ nav {
     justify-content: space-between;
 }
 
+nav:hover {
+    opacity: .2;
+    
+}
+
 main {
     min-height: 100vh;
     padding: 85px 24px 96px;
